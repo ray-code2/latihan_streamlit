@@ -73,7 +73,7 @@ bar_top5_moneyspent = px.bar(moneyspentbycountry , x='cust_id' , y ='amount_spen
 st.plotly_chart(bar_top5_moneyspent)
 ax = df_new.groupby('invoice_num')['year_month'].value_counts().sort_index()
 st.write(ax)
-
+st.caption("Hello")
 
 
 
